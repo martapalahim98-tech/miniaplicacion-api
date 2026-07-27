@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Japan Route AI crea rutas personalizadas por Japón según tus días, presupuesto e intereses." />
+    <title>Japan Route AI · Planifica tu viaje por Japón</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Serif:wght@600;700&display=swap" rel="stylesheet" />
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <a class="salto-contenido" href="#contenidoPrincipal">Saltar al contenido principal</a>
+
+    <!-- Cabecera -->
+    <header class="cabecera" id="inicio">
+        <div class="contenedor cabecera__interior">
+            <a class="marca" href="#inicio" aria-label="Japan Route AI, volver al inicio">
+                <span class="marca__simbolo" aria-hidden="true"></span>
+                <span class="marca__texto">
+                    <strong>Japan Route AI</strong>
+                    <small>Viajes pensados para ti</small>
+                </span>
+            </a>
+
+            <nav class="navegacion" aria-label="Navegación principal">
+                <a href="#comoFunciona">Cómo funciona</a>
+                <a href="#planificador">Planificador</a>
+                <a class="boton boton--pequeno boton--oscuro" href="#planificador">Crear mi ruta</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenidoPrincipal">
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="tituloHero">
+            <div class="contenedor hero__rejilla">
+                <div class="hero__contenido">
+                    <p class="sobrelinea">Tu primera ruta inteligente por Japón</p>
+                    <h1 id="tituloHero">Descubre el Japón que mejor encaja contigo</h1>
+                    <p class="hero__descripcion">
+                        Comparamos tus preferencias, los destinos y los desplazamientos para proponerte una ruta clara, equilibrada y personalizada.
+                    </p>
+
+                    <div class="grupo-botones">
+                        <a class="boton boton--principal" href="#planificador">Empezar planificación</a>
+                        <a class="boton boton--secundario" href="#comoFunciona">Ver cómo funciona</a>
+                    </div>
+
+                    <ul class="hero__ventajas" aria-label="Ventajas principales">
+                        <li>Ruta por días</li>
+                        <li>Entrada y salida recomendadas</li>
+                        <li>Comparación de vuelos</li>
+                    </ul>
+                </div>
+
+                <div class="hero__visual" aria-label="Ilustración abstracta inspirada en Japón">
+                    <div class="sol-japones" aria-hidden="true"></div>
+                    <div class="montana montana--lejana" aria-hidden="true"></div>
+                    <div class="montana montana--cercana" aria-hidden="true"></div>
+                    <div class="ruta-ilustrada" aria-hidden="true">
+                        <span class="ruta-ilustrada__punto ruta-ilustrada__punto--1"></span>
+                        <span class="ruta-ilustrada__punto ruta-ilustrada__punto--2"></span>
+                        <span class="ruta-ilustrada__punto ruta-ilustrada__punto--3"></span>
+                    </div>
+                    <div class="ondas" aria-hidden="true">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <p class="hero__kanji" aria-hidden="true">旅</p>
+                    <div class="hero__tarjeta-flotante">
+                        <span>Ruta sugerida</span>
+                        <strong>Osaka → Tokio</strong>
+                        <small>12 días · ritmo equilibrado</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo funciona -->
+        <section class="seccion seccion--clara" id="comoFunciona" aria-labelledby="tituloComoFunciona">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <p class="sobrelinea">Tres pasos</p>
+                    <h2 id="tituloComoFunciona">Planificar Japón puede ser más sencillo</h2>
+                    <p>La aplicación combina tus preferencias con datos de rutas y una explicación generada por IA.</p>
+                </div>
+
+                <ol class="pasos-funcionamiento">
+                    <li class="tarjeta-paso">
+                        <span class="tarjeta-paso__numero">01</span>
+                        <h3>Explica tus preferencias</h3>
+                        <p>Indica fechas, presupuesto, ritmo e intereses.</p>
+                    </li>
+                    <li class="tarjeta-paso">
+                        <span class="tarjeta-paso__numero">02</span>
+                        <h3>Comparamos opciones</h3>
+                        <p>Seleccionamos destinos, conexiones, aeropuertos y vuelos.</p>
+                    </li>
+                    <li class="tarjeta-paso">
+                        <span class="tarjeta-paso__numero">03</span>
+                        <h3>Recibe tu propuesta</h3>
+                        <p>Obtén una ruta razonada, mapa, transportes e itinerario.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Planificador -->
+        <section class="seccion" id="planificador" aria-labelledby="tituloPlanificador">
+            <div class="contenedor planificador__rejilla">
+                <aside class="planificador__introduccion">
+                    <p class="sobrelinea">Planificador inteligente</p>
+                    <h2 id="tituloPlanificador">Diseña tu viaje paso a paso</h2>
+                    <p>
+                        Completa los cuatro bloques. Más adelante JavaScript validará los datos, calculará las rutas y conectará el resultado con la IA.
+                    </p>
+
+                    <div class="detalle-japones" aria-hidden="true">
+                        <span class="detalle-japones__sol"></span>
+                        <span class="detalle-japones__linea"></span>
+                        <span class="detalle-japones__linea"></span>
+                        <span class="detalle-japones__linea"></span>
+                    </div>
+
+                    <ul class="lista-comprobacion">
+                        <li>Entre 5 y 14 días</li>
+                        <li>Hasta 5 destinos principales</li>
+                        <li>Rutas centradas en Japón central</li>
+                        <li>Sin reservas ni pagos</li>
+                    </ul>
+                </aside>
+
+                <div class="planificador__panel">
+                    <div class="progreso" aria-label="Progreso del formulario">
+                        <div class="progreso__cabecera">
+                            <span id="textoPasoActual">Paso 1 de 4</span>
+                            <span id="porcentajeProgreso">25%</span>
+                        </div>
+                        <div class="progreso__barra" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-labelledby="textoPasoActual">
+                            <span id="barraProgreso"></span>
+                        </div>
+                        <ol class="progreso__pasos" aria-label="Pasos del formulario">
+                            <li class="esta-activo" data-progress-step="1"><span>1</span><small>Viaje</small></li>
+                            <li data-progress-step="2"><span>2</span><small>Intereses</small></li>
+                            <li data-progress-step="3"><span>3</span><small>Estilo</small></li>
+                            <li data-progress-step="4"><span>4</span><small>Prioridades</small></li>
+                        </ol>
+                    </div>
+
+                    <form id="formPlanificador" novalidate>
+                        <!-- Paso 1 -->
+                        <section class="paso-formulario esta-activo" id="pasoViaje" data-step="1" aria-labelledby="tituloPasoViaje">
+                            <div class="paso-formulario__encabezado">
+                                <span class="etiqueta">Paso 1</span>
+                                <h3 id="tituloPasoViaje">Datos del viaje</h3>
+                                <p>Empecemos por la información imprescindible.</p>
+                            </div>
+
+                            <div class="rejilla-campos">
+                                <div class="grupo-campo grupo-campo--completo">
+                                    <label for="origenViaje">Ciudad o aeropuerto de salida</label>
+                                    <input id="origenViaje" name="origenViaje" type="text" autocomplete="off" placeholder="Ej. Barcelona (BCN)" required />
+                                    <small class="ayuda-campo">En el MVP se limitará a aeropuertos españoles seleccionados.</small>
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="fechaIda">Fecha de ida</label>
+                                    <input id="fechaIda" name="fechaIda" type="date" required />
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="fechaVuelta">Fecha de vuelta</label>
+                                    <input id="fechaVuelta" name="fechaVuelta" type="date" required />
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="numeroPersonas">Número de personas</label>
+                                    <input id="numeroPersonas" name="numeroPersonas" type="number" min="1" max="8" value="1" required />
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="presupuestoTotal">Presupuesto total</label>
+                                    <div class="campo-con-unidad">
+                                        <input id="presupuestoTotal" name="presupuestoTotal" type="number" min="500" step="50" placeholder="2500" required />
+                                        <span>€</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <fieldset class="grupo-opciones">
+                                <legend>¿Es tu primera visita a Japón?</legend>
+                                <div class="opciones-segmentadas">
+                                    <label class="opcion-segmentada" for="primeraVisitaSi">
+                                        <input id="primeraVisitaSi" name="primeraVisita" type="radio" value="si" checked />
+                                        <span>Sí, es la primera</span>
+                                    </label>
+                                    <label class="opcion-segmentada" for="primeraVisitaNo">
+                                        <input id="primeraVisitaNo" name="primeraVisita" type="radio" value="no" />
+                                        <span>No, ya he ido</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <div class="acciones-paso acciones-paso--final">
+                                <button class="boton boton--principal" id="btnContinuarPaso1" type="button" data-action="next">Continuar</button>
+                            </div>
+                        </section>
+
+                        <!-- Paso 2 -->
+                        <section class="paso-formulario" id="pasoIntereses" data-step="2" aria-labelledby="tituloPasoIntereses" hidden>
+                            <div class="paso-formulario__encabezado">
+                                <span class="etiqueta">Paso 2</span>
+                                <h3 id="tituloPasoIntereses">¿Qué Japón quieres descubrir?</h3>
+                                <p>Selecciona al menos tres intereses.</p>
+                            </div>
+
+                            <fieldset class="grupo-opciones">
+                                <legend class="oculto-visualmente">Intereses del viaje</legend>
+                                <div class="rejilla-intereses">
+                                    <label class="tarjeta-seleccion" for="interesCultura">
+                                        <input id="interesCultura" name="intereses" type="checkbox" value="cultura"/>
+                                        <span><strong>Cultura tradicional</strong><small>Historia, barrios y costumbres</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesTemplos">
+                                        <input id="interesTemplos" name="intereses" type="checkbox" value="templos"/>
+                                        <span><strong>Templos y santuarios</strong><small>Arquitectura y espiritualidad</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesGastronomia">
+                                        <input id="interesGastronomia" name="intereses" type="checkbox" value="gastronomia"/>
+                                        <span><strong>Gastronomía</strong><small>Mercados, platos y barrios</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesNaturaleza">
+                                        <input id="interesNaturaleza" name="intereses" type="checkbox" value="naturaleza"/>
+                                        <span><strong>Naturaleza</strong><small>Montañas, jardines y paisajes</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesCiudades">
+                                        <input id="interesCiudades" name="intereses" type="checkbox" value="grandes-ciudades"/>
+                                        <span><strong>Grandes ciudades</strong><small>Tokio, Osaka y vida urbana</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesPueblos">
+                                        <input id="interesPueblos" name="intereses" type="checkbox" value="pueblos"/>
+                                        <span><strong>Pueblos tradicionales</strong><small>Entornos rurales y arquitectura</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesAnime">
+                                        <input id="interesAnime" name="intereses" type="checkbox" value="anime-tecnologia"/>
+                                        <span><strong>Anime y tecnología</strong><small>Distritos temáticos e innovación</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesCompras">
+                                        <input id="interesCompras" name="intereses" type="checkbox" value="compras" />
+                                        <span><strong>Compras</strong><small>Moda, diseño y recuerdos</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesNoche">
+                                        <input id="interesNoche" name="intereses" type="checkbox" value="vida-nocturna"/>
+                                        <span><strong>Vida nocturna</strong><small>Bares y barrios animados</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesSenderismo">
+                                        <input id="interesSenderismo" name="intereses" type="checkbox" value="senderismo"/>
+                                        <span><strong>Senderismo</strong><small>Rutas y excursiones activas</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesLocal">
+                                        <input id="interesLocal" name="intereses" type="checkbox" value="poco-turistico" />
+                                        <span><strong>Destinos menos turísticos</strong><small>Experiencias más locales</small></span>
+                                    </label>
+                                    <label class="tarjeta-seleccion" for="interesParques">
+                                        <input id="interesParques" name="intereses" type="checkbox" value="parques-tematicos"/>
+                                        <span><strong>Parques temáticos</strong><small>Ocio y experiencias especiales</small></span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <div class="acciones-paso">
+                                <button class="boton boton--secundario" id="btnAnteriorPaso2" type="button" data-action="previous">Anterior</button>
+                                <button class="boton boton--principal" id="btnContinuarPaso2" type="button" data-action="next">Continuar</button>
+                            </div>
+                        </section>
+
+                        <!-- Paso 3 -->
+                        <section class="paso-formulario" id="pasoEstilo" data-step="3" aria-labelledby="tituloPasoEstilo" hidden>
+                            <div class="paso-formulario__encabezado">
+                                <span class="etiqueta">Paso 3</span>
+                                <h3 id="tituloPasoEstilo">Tu estilo de viaje</h3>
+                                <p>Ajustaremos la ruta al ritmo y comodidad que prefieres.</p>
+                            </div>
+
+                            <fieldset class="grupo-opciones">
+                                <legend>Ritmo del viaje</legend>
+
+                                <div class="opciones-segmentadas opciones-segmentadas--tres">
+                                    <label class="opcion-segmentada" for="ritmoRelajado">
+                                        <input id="ritmoRelajado" name="ritmo" type="radio" value="relajado"/>
+                                        <span>Relajado</span>
+                                    </label>
+                                    <label class="opcion-segmentada" for="ritmoEquilibrado">
+                                        <input id="ritmoEquilibrado" name="ritmo" type="radio" value="equilibrado" checked />
+                                        <span>Equilibrado</span></label>
+                                    <label class="opcion-segmentada" for="ritmoIntenso">
+                                        <input id="ritmoIntenso" name="ritmo" type="radio" value="intenso"/>
+                                        <span>Intenso</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <div class="grupo-rango">
+                                <label for="preferenciaUrbana">Tipo de destinos</label>
+                                <input id="preferenciaUrbana" name="preferenciaUrbana" type="range" min="1" max="5" value="3"/>
+                                <div class="grupo-rango__extremos">
+                                    <span>Tradicional</span>
+                                    <span>Urbano</span>
+                                </div>
+                            </div>
+
+                            <div class="grupo-rango">
+                                <label for="preferenciaTuristica">Popularidad</label>
+                                <input id="preferenciaTuristica" name="preferenciaTuristica" type="range" min="1" max="5" value="3" />
+                                <div class="grupo-rango__extremos">
+                                    <span>Local</span>
+                                    <span>Turístico</span>
+                                </div>
+                            </div>
+
+                            <fieldset class="grupo-opciones">
+                                <legend>Cambios de alojamiento</legend>
+                                <div class="opciones-segmentadas opciones-segmentadas--tres">
+                                    <label class="opcion-segmentada" for="cambiosPocos">
+                                        <input id="cambiosPocos" name="cambiosAlojamiento" type="radio" value="pocos" />
+                                        <span>Los mínimos</span>
+                                    </label>
+                                    <label class="opcion-segmentada" for="cambiosEquilibrados">
+                                        <input id="cambiosEquilibrados" name="cambiosAlojamiento" type="radio" value="equilibrados" checked/>
+                                        <span>Equilibrados</span>
+                                    </label>
+                                    <label class="opcion-segmentada" for="cambiosIndiferente">
+                                        <input id="cambiosIndiferente" name="cambiosAlojamiento" type="radio" value="indiferente"/>
+                                        <span>Me da igual</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <div class="rejilla-conmutadores">
+                                <label class="conmutador" for="puedeConducir"><span><strong>Podría conducir</strong><small>Considerar coche en zonas rurales</small></span><input id="puedeConducir" name="puedeConducir" type="checkbox" /><i aria-hidden="true"></i></label>
+                                <label class="conmutador" for="viajeConNinos"><span><strong>Viajo con niños</strong><small>Priorizar trayectos sencillos</small></span><input id="viajeConNinos" name="viajeConNinos" type="checkbox" /><i aria-hidden="true"></i></label>
+                                <label class="conmutador" for="necesitaAccesibilidad"><span><strong>Necesidades de accesibilidad</strong><small>Reducir barreras y transbordos</small></span><input id="necesitaAccesibilidad" name="necesitaAccesibilidad" type="checkbox" /><i aria-hidden="true"></i></label>
+                            </div>
+
+                            <div class="acciones-paso">
+                                <button class="boton boton--secundario" id="btnAnteriorPaso3" type="button" data-action="previous">Anterior</button>
+                                <button class="boton boton--principal" id="btnContinuarPaso3" type="button" data-action="next">Continuar</button>
+                            </div>
+                        </section>
+
+                        <!-- Paso 4 -->
+                        <section class="paso-formulario" id="pasoPrioridades" data-step="4" aria-labelledby="tituloPasoPrioridades" hidden>
+                            <div class="paso-formulario__encabezado">
+                                <span class="etiqueta">Paso 4</span>
+                                <h3 id="tituloPasoPrioridades">Vuelos y prioridades</h3>
+                                <p>Últimos detalles antes de preparar la propuesta.</p>
+                            </div>
+
+                            <fieldset class="grupo-opciones">
+                                <legend>¿Qué priorizas en el vuelo?</legend>
+                                <div class="opciones-segmentadas opciones-segmentadas--tres">
+                                    <label class="opcion-segmentada" for="prioridadPrecio"><input id="prioridadPrecio" name="prioridadVuelo" type="radio" value="precio" /><span>Precio</span></label>
+                                    <label class="opcion-segmentada" for="prioridadEquilibrio"><input id="prioridadEquilibrio" name="prioridadVuelo" type="radio" value="equilibrio" checked /><span>Equilibrio</span></label>
+                                    <label class="opcion-segmentada" for="prioridadRapidez"><input id="prioridadRapidez" name="prioridadVuelo" type="radio" value="rapidez" /><span>Rapidez</span></label>
+                                </div>
+                            </fieldset>
+
+                            <div class="rejilla-campos">
+                                <div class="grupo-campo">
+                                    <label for="aeropuertoEntrada">Aeropuerto de entrada</label>
+                                    <select id="aeropuertoEntrada" name="aeropuertoEntrada">
+                                        <option value="">Sin preferencia</option>
+                                        <option value="tokio">Tokio: Haneda o Narita</option>
+                                        <option value="osaka">Osaka: Kansai</option>
+                                    </select>
+                                </div>
+                                <div class="grupo-campo">
+                                    <label for="aeropuertoSalida">Aeropuerto de salida</label>
+                                    <select id="aeropuertoSalida" name="aeropuertoSalida">
+                                        <option value="">Sin preferencia</option>
+                                        <option value="tokio">Tokio: Haneda o Narita</option>
+                                        <option value="osaka">Osaka: Kansai</option>
+                                    </select>
+                                </div>
+                                <div class="grupo-campo grupo-campo--completo">
+                                    <label for="observacionesViaje">Observaciones opcionales</label>
+                                    <textarea id="observacionesViaje" name="observacionesViaje" rows="4" maxlength="350" placeholder="Ej. Quiero evitar cambios de hotel seguidos o dedicar más tiempo a Kioto."></textarea>
+                                    <small class="ayuda-campo">Máximo 350 caracteres.</small>
+                                </div>
+                            </div>
+
+                            <div class="acciones-paso">
+                                <button class="boton boton--secundario" id="btnAnteriorPaso4" type="button" data-action="previous">Anterior</button>
+                                <button class="boton boton--destacado" id="btnGenerarRuta" type="submit" data-action="submit">Generar mi ruta</button>
+                            </div>
+                        </section>
+
+                        <div id="mensajeFormulario" class="mensaje" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estado de carga -->
+        <section class="seccion estado-carga" id="estadoCarga" aria-labelledby="tituloCarga" aria-live="polite" hidden>
+            <div class="contenedor estado-carga__interior">
+                <div class="cargador-japones" aria-hidden="true">
+                    <span class="cargador-japones__sol"></span>
+                    <span class="cargador-japones__orbita"></span>
+                </div>
+                <p class="sobrelinea">Japan Route AI está trabajando</p>
+                <h2 id="tituloCarga">Estamos preparando tu ruta</h2>
+                <p id="textoEstadoCarga">Analizando tus preferencias...</p>
+
+                <ol class="lista-procesos" id="listaProcesosCarga">
+                    <li class="esta-activo" data-status="active">Analizando preferencias</li>
+                    <li data-status="pending">Seleccionando destinos</li>
+                    <li data-status="pending">Comparando rutas</li>
+                    <li data-status="pending">Consultando vuelos</li>
+                    <li data-status="pending">Preparando recomendación IA</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Resultados -->
+        <section class="seccion resultados" id="resultadosViaje" aria-labelledby="tituloResultados" aria-live="polite" hidden>
+            <div class="contenedor">
+                <header class="resultados__cabecera">
+                    <div>
+                        <p class="sobrelinea">Tu propuesta personalizada</p>
+                        <h2 id="tituloResultados">Tu viaje ideal por Japón</h2>
+                        <p id="subtituloResultados">Una ruta equilibrada entre cultura, gastronomía y ciudades.</p>
+                    </div>
+                    <div class="resumen-etiquetas" id="resumenIntereses">
+                        <span>Cultura</span><span>Gastronomía</span><span>Naturaleza</span>
+                    </div>
+                </header>
+
+                <div class="resumen-viaje" id="resumenViaje">
+                    <article><span>Duración</span><strong id="resumenDuracion">12 días</strong></article>
+                    <article><span>Viajeros</span><strong id="resumenViajeros">2 personas</strong></article>
+                    <article><span>Presupuesto</span><strong id="resumenPresupuesto">2.600 €</strong></article>
+                    <article><span>Ritmo</span><strong id="resumenRitmo">Equilibrado</strong></article>
+                </div>
+
+                <div class="resultados__destacado">
+                    <article class="tarjeta tarjeta--ruta">
+                        <div class="tarjeta__encabezado">
+                            <div><p class="sobrelinea">Ruta recomendada</p><h3 id="tituloRuta">De Kansai a Tokio</h3></div>
+                            <span class="insignia insignia--roja">Mejor equilibrio</span>
+                        </div>
+
+                        <div class="ruta-visual" id="rutaRecomendada">
+                            <article class="ruta-visual__parada" data-city="osaka"><span>1</span><div><strong>Osaka</strong><small>2 días</small></div></article>
+                            <article class="ruta-visual__parada" data-city="nara"><span>2</span><div><strong>Nara</strong><small>Excursión</small></div></article>
+                            <article class="ruta-visual__parada" data-city="kioto"><span>3</span><div><strong>Kioto</strong><small>3 días</small></div></article>
+                            <article class="ruta-visual__parada" data-city="kanazawa"><span>4</span><div><strong>Kanazawa</strong><small>2 días</small></div></article>
+                            <article class="ruta-visual__parada" data-city="tokio"><span>5</span><div><strong>Tokio</strong><small>4 días</small></div></article>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta tarjeta--aeropuertos">
+                        <p class="sobrelinea">Entrada y salida</p>
+                        <div class="aeropuerto-recomendado">
+                            <span>Entrada</span><strong id="aeropuertoEntradaResultado">Kansai · Osaka</strong>
+                        </div>
+                        <div class="aeropuerto-recomendado">
+                            <span>Salida</span><strong id="aeropuertoSalidaResultado">Haneda · Tokio</strong>
+                        </div>
+                        <p id="motivoAeropuertos">La ruta avanza hacia el este y evita regresar al punto inicial.</p>
+                    </article>
+                </div>
+
+                <!-- Vuelos -->
+                <section class="bloque-resultados" aria-labelledby="tituloVuelos">
+                    <div class="bloque-resultados__encabezado">
+                        <div><p class="sobrelinea">Comparación</p><h3 id="tituloVuelos">Opciones de vuelo</h3></div>
+                        <p>Datos de demostración que JavaScript sustituirá con la respuesta de la API.</p>
+                    </div>
+
+                    <div class="rejilla-vuelos" id="comparacionVuelos">
+                        <article class="tarjeta-vuelo" data-flight-type="cheapest">
+                            <span class="insignia">Más barato</span>
+                            <p class="tarjeta-vuelo__trayecto" data-field="route">Barcelona → Tokio</p>
+                            <strong class="tarjeta-vuelo__precio" data-field="price">730 €</strong>
+                            <dl><div><dt>Duración</dt><dd data-field="duration">19 h</dd></div><div><dt>Escalas</dt><dd data-field="stops">2</dd></div><div><dt>Compañía</dt><dd data-field="carrier">Compañía aérea</dd></div></dl>
+                        </article>
+
+                        <article class="tarjeta-vuelo" data-flight-type="fastest">
+                            <span class="insignia">Más rápido</span>
+                            <p class="tarjeta-vuelo__trayecto" data-field="route">Barcelona → Osaka</p>
+                            <strong class="tarjeta-vuelo__precio" data-field="price">910 €</strong>
+                            <dl><div><dt>Duración</dt><dd data-field="duration">15 h</dd></div><div><dt>Escalas</dt><dd data-field="stops">1</dd></div><div><dt>Compañía</dt><dd data-field="carrier">Compañía aérea</dd></div></dl>
+                        </article>
+
+                        <article class="tarjeta-vuelo tarjeta-vuelo--recomendado" data-flight-type="recommended">
+                            <span class="insignia insignia--roja">Recomendado</span>
+                            <p class="tarjeta-vuelo__trayecto" data-field="route">Barcelona → Osaka</p>
+                            <strong class="tarjeta-vuelo__precio" data-field="price">910 €</strong>
+                            <dl><div><dt>Duración</dt><dd data-field="duration">15 h</dd></div><div><dt>Escalas</dt><dd data-field="stops">1</dd></div><div><dt>Motivo</dt><dd data-field="reason">Mejor equilibrio</dd></div></dl>
+                        </article>
+                    </div>
+                    <p class="aviso-datos">Información orientativa. Japan Route AI no realiza reservas ni garantiza disponibilidad o precios.</p>
+                </section>
+
+                <!-- Mapa e IA -->
+                <div class="resultados__dos-columnas">
+                    <section class="bloque-resultados bloque-resultados--mapa" aria-labelledby="tituloMapa">
+                        <div class="bloque-resultados__encabezado"><div><p class="sobrelinea">Visualización</p><h3 id="tituloMapa">Ruta en el mapa</h3></div></div>
+                        <div id="mapaRuta" role="img" aria-label="Aquí se mostrará el mapa interactivo de la ruta por Japón">
+                            <div class="mapa-placeholder"><span aria-hidden="true"></span><strong>Mapa preparado para Leaflet</strong><small>Los marcadores y líneas se añadirán con JavaScript.</small></div>
+                        </div>
+                    </section>
+
+                    <article class="tarjeta recomendacion-ia" id="recomendacionIA">
+                        <div class="recomendacion-ia__simbolo" aria-hidden="true">AI</div>
+                        <p class="sobrelinea">Análisis de Qwen</p>
+                        <h3 id="tituloRecomendacionIA">Por qué esta ruta encaja contigo</h3>
+                        <p id="resumenRecomendacionIA">Combina destinos tradicionales y urbanos sin añadir desplazamientos innecesarios.</p>
+                        <div id="explicacionRecomendacionIA">
+                            <p>Entrar por Osaka y salir por Tokio permite avanzar de oeste a este y aprovechar mejor los días disponibles.</p>
+                        </div>
+                        <ul id="consejosRecomendacionIA"><li>Reserva con antelación los trayectos más largos.</li><li>Mantén Nara como excursión para reducir cambios de hotel.</li></ul>
+                    </article>
+                </div>
+
+                <!-- Transportes -->
+                <section class="bloque-resultados" aria-labelledby="tituloTransportes">
+                    <div class="bloque-resultados__encabezado"><div><p class="sobrelinea">Desplazamientos</p><h3 id="tituloTransportes">Transportes internos</h3></div></div>
+                    <div class="lista-transportes" id="listaTransportes">
+                        <article class="tarjeta-transporte"><div><small>Trayecto 1</small><h4>Osaka → Nara</h4></div><dl><div><dt>Medio</dt><dd>Tren regional</dd></div><div><dt>Duración</dt><dd>45 min</dd></div><div><dt>Precio</dt><dd>≈ 680 ¥</dd></div><div><dt>Transbordos</dt><dd>0</dd></div></dl></article>
+                        <article class="tarjeta-transporte"><div><small>Trayecto 2</small><h4>Kioto → Kanazawa</h4></div><dl><div><dt>Medio</dt><dd>Tren</dd></div><div><dt>Duración</dt><dd>2 h</dd></div><div><dt>Precio</dt><dd>≈ 7.700 ¥</dd></div><div><dt>Transbordos</dt><dd>1</dd></div></dl></article>
+                        <article class="tarjeta-transporte"><div><small>Trayecto 3</small><h4>Kanazawa → Tokio</h4></div><dl><div><dt>Medio</dt><dd>Shinkansen</dd></div><div><dt>Duración</dt><dd>2 h 30 min</dd></div><div><dt>Precio</dt><dd>≈ 14.000 ¥</dd></div><div><dt>Transbordos</dt><dd>0</dd></div></dl></article>
+                    </div>
+                </section>
+
+                <!-- Días e itinerario -->
+                <div class="resultados__dos-columnas resultados__dos-columnas--itinerario">
+                    <section class="bloque-resultados" aria-labelledby="tituloDistribucion">
+                        <div class="bloque-resultados__encabezado"><div><p class="sobrelinea">Tiempo</p><h3 id="tituloDistribucion">Distribución de días</h3></div></div>
+                        <div class="distribucion-dias" id="distribucionDias">
+                            <article><span>Osaka</span><strong>2 días</strong></article>
+                            <article><span>Nara</span><strong>1 excursión</strong></article>
+                            <article><span>Kioto</span><strong>3 días</strong></article>
+                            <article><span>Kanazawa</span><strong>2 días</strong></article>
+                            <article><span>Tokio</span><strong>4 días</strong></article>
+                        </div>
+                    </section>
+
+                    <section class="bloque-resultados" aria-labelledby="tituloPresupuesto">
+                        <div class="bloque-resultados__encabezado"><div><p class="sobrelinea">Estimación</p><h3 id="tituloPresupuesto">Presupuesto aproximado</h3></div></div>
+                        <dl class="presupuesto" id="resumenPresupuestoDetallado">
+                            <div><dt>Vuelos</dt><dd id="presupuestoVuelos">910 €</dd></div>
+                            <div><dt>Alojamiento</dt><dd id="presupuestoAlojamiento">720 €</dd></div>
+                            <div><dt>Transporte interno</dt><dd id="presupuestoTransporte">310 €</dd></div>
+                            <div><dt>Comida</dt><dd id="presupuestoComida">480 €</dd></div>
+                            <div><dt>Actividades</dt><dd id="presupuestoActividades">180 €</dd></div>
+                            <div class="presupuesto__total"><dt>Total estimado</dt><dd id="presupuestoTotalResultado">2.600 €</dd></div>
+                        </dl>
+                        <p class="aviso-datos">Estimación orientativa; los importes reales pueden variar.</p>
+                    </section>
+                </div>
+
+                <section class="bloque-resultados" aria-labelledby="tituloItinerario">
+                    <div class="bloque-resultados__encabezado"><div><p class="sobrelinea">Día a día</p><h3 id="tituloItinerario">Itinerario propuesto</h3></div></div>
+                    <div class="itinerario" id="itinerarioDias">
+                        <article class="dia-itinerario esta-abierto" data-day="1">
+                            <button class="dia-itinerario__boton" type="button" aria-expanded="true"><span><small>Día 1</small><strong>Llegada a Osaka</strong></span><i aria-hidden="true"></i></button>
+                            <div class="dia-itinerario__contenido"><p>Llegada al aeropuerto de Kansai, traslado al alojamiento y paseo tranquilo por Namba.</p><span>Ritmo suave · llegada</span></div>
+                        </article>
+                        <article class="dia-itinerario" data-day="2">
+                            <button class="dia-itinerario__boton" type="button" aria-expanded="false"><span><small>Día 2</small><strong>Osaka urbana</strong></span><i aria-hidden="true"></i></button>
+                            <div class="dia-itinerario__contenido" hidden><p>Castillo de Osaka, Umeda y Shinsekai.</p><span>Ciudad · gastronomía</span></div>
+                        </article>
+                        <article class="dia-itinerario" data-day="3">
+                            <button class="dia-itinerario__boton" type="button" aria-expanded="false"><span><small>Día 3</small><strong>Excursión a Nara</strong></span><i aria-hidden="true"></i></button>
+                            <div class="dia-itinerario__contenido" hidden><p>Parque de Nara, Todai-ji y Naramachi.</p><span>Cultura · naturaleza</span></div>
+                        </article>
+                    </div>
+                </section>
+
+                <div class="acciones-finales">
+                    <button class="boton boton--secundario" id="btnModificarPreferencias" type="button" data-action="edit">Modificar preferencias</button>
+                    <button class="boton boton--oscuro" id="btnGenerarOtraRuta" type="button" data-action="regenerate">Generar otra ruta</button>
+                    <button class="boton boton--destacado" id="btnAnalizarConIA" type="button" data-action="analyze-ai">Analizar la ruta con IA</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gestión de errores -->
+        <section class="seccion estado-error" id="estadoError" aria-labelledby="tituloError" aria-live="assertive" hidden>
+            <div class="contenedor estado-error__interior">
+                <span class="estado-error__simbolo" aria-hidden="true">!</span>
+                <p class="sobrelinea">No hemos podido completar el proceso</p>
+                <h2 id="tituloError">Ha ocurrido un problema</h2>
+                <p id="mensajeErrorGeneral">No se ha podido generar una ruta viable. Revisa tus preferencias o inténtalo de nuevo.</p>
+                <button class="boton boton--oscuro" id="btnReintentar" type="button" data-action="retry">Volver a intentarlo</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pie-pagina">
+        <div class="contenedor pie-pagina__rejilla">
+            <div>
+                <a class="marca marca--pie" href="#inicio">
+                    <span class="marca__simbolo" aria-hidden="true"></span>
+                    <span class="marca__texto"><strong>Japan Route AI</strong><small>Proyecto académico de JavaScript e IA</small></span>
+                </a>
+                <p>Prototipo orientativo. No realiza reservas ni sustituye las fuentes oficiales de viaje y transporte.</p>
+            </div>
+            <nav aria-label="Enlaces del pie de página"><a href="#inicio">Inicio</a><a href="#comoFunciona">Cómo funciona</a><a href="#planificador">Planificador</a></nav>
+        </div>
+        <div class="ondas-pie" aria-hidden="true"><span></span><span></span><span></span></div>
+    </footer>
+
+    <!-- JavaScript se desarrollará en la siguiente fase -->
+    <script src="js/app.js" defer></script>
+</body>
+</html>

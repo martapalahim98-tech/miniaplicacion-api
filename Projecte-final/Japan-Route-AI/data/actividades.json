@@ -1,0 +1,388 @@
+[
+    {
+        "id": "tokio-sensoji",
+        "ciudadId": "tokio",
+        "nombre": "Templo Sensō-ji y Asakusa",
+        "descripcion": "Recorrido por el templo, sus calles tradicionales y el entorno de Asakusa.",
+        "intereses": [
+            "cultura-templos",
+            "japon-tradicional"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "mañana",
+        "costeEstimadoEuros": 5,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "tokio-shibuya",
+        "ciudadId": "tokio",
+        "nombre": "Shibuya y Harajuku",
+        "descripcion": "Paseo por dos de las zonas urbanas más conocidas de Tokio.",
+        "intereses": [
+            "grandes-ciudades",
+            "anime-tecnologia-compras"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "tarde",
+        "costeEstimadoEuros": 10,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "tokio-akihabara",
+        "ciudadId": "tokio",
+        "nombre": "Akihabara",
+        "descripcion": "Distrito dedicado a la tecnología, el anime, el manga y los videojuegos.",
+        "intereses": [
+            "anime-tecnologia-compras",
+            "grandes-ciudades"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "tarde",
+        "costeEstimadoEuros": 5,
+        "esActividadPrincipal": false
+    },
+    {
+        "id": "tokio-ueno",
+        "ciudadId": "tokio",
+        "nombre": "Parque de Ueno",
+        "descripcion": "Paseo por una de las principales zonas verdes y culturales de Tokio.",
+        "intereses": [
+            "naturaleza",
+            "cultura-templos"
+        ],
+        "tiposExperiencia": [
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "mañana",
+        "costeEstimadoEuros": 0,
+        "esActividadPrincipal": false
+    },
+
+    {
+        "id": "kioto-fushimi-inari",
+        "ciudadId": "kioto",
+        "nombre": "Fushimi Inari",
+        "descripcion": "Recorrido por los senderos y torii del santuario Fushimi Inari.",
+        "intereses": [
+            "cultura-templos",
+            "naturaleza",
+            "japon-tradicional"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "mañana",
+        "costeEstimadoEuros": 0,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "kioto-higashiyama",
+        "ciudadId": "kioto",
+        "nombre": "Higashiyama y Gion",
+        "descripcion": "Paseo por calles históricas, barrios tradicionales y el entorno de Gion.",
+        "intereses": [
+            "cultura-templos",
+            "japon-tradicional"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "tarde",
+        "costeEstimadoEuros": 5,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "kioto-arashiyama",
+        "ciudadId": "kioto",
+        "nombre": "Arashiyama",
+        "descripcion": "Visita al entorno natural de Arashiyama y su conocido bosque de bambú.",
+        "intereses": [
+            "naturaleza",
+            "japon-tradicional"
+        ],
+        "tiposExperiencia": [
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "mañana",
+        "costeEstimadoEuros": 5,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "kioto-mercado-nishiki",
+        "ciudadId": "kioto",
+        "nombre": "Mercado Nishiki",
+        "descripcion": "Recorrido gastronómico por uno de los mercados más conocidos de Kioto.",
+        "intereses": [
+            "gastronomia"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "actividad-corta",
+        "momentoRecomendado": "mediodía",
+        "costeEstimadoEuros": 15,
+        "esActividadPrincipal": false
+    },
+
+    {
+        "id": "osaka-dotonbori",
+        "ciudadId": "osaka",
+        "nombre": "Dōtonbori",
+        "descripcion": "Paseo por una de las zonas gastronómicas y comerciales más conocidas de Osaka.",
+        "intereses": [
+            "gastronomia",
+            "grandes-ciudades"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "tarde",
+        "costeEstimadoEuros": 20,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "osaka-castillo",
+        "ciudadId": "osaka",
+        "nombre": "Castillo de Osaka",
+        "descripcion": "Visita al entorno del castillo y sus jardines.",
+        "intereses": [
+            "cultura-templos",
+            "naturaleza"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "mañana",
+        "costeEstimadoEuros": 5,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "osaka-den-den-town",
+        "ciudadId": "osaka",
+        "nombre": "Den Den Town",
+        "descripcion": "Zona comercial especializada en electrónica, manga y cultura popular.",
+        "intereses": [
+            "anime-tecnologia-compras",
+            "grandes-ciudades"
+        ],
+        "tiposExperiencia": [
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "tarde",
+        "costeEstimadoEuros": 5,
+        "esActividadPrincipal": false
+    },
+
+    {
+        "id": "nara-parque",
+        "ciudadId": "nara",
+        "nombre": "Parque de Nara",
+        "descripcion": "Paseo por el parque y su entorno natural.",
+        "intereses": [
+            "naturaleza",
+            "japon-tradicional"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "mañana",
+        "costeEstimadoEuros": 0,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "nara-todaiji",
+        "ciudadId": "nara",
+        "nombre": "Templo Tōdai-ji",
+        "descripcion": "Visita a uno de los templos más representativos de Nara.",
+        "intereses": [
+            "cultura-templos",
+            "japon-tradicional"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada"
+        ],
+        "duracion": "actividad-corta",
+        "momentoRecomendado": "mediodía",
+        "costeEstimadoEuros": 5,
+        "esActividadPrincipal": true
+    },
+
+    {
+        "id": "hiroshima-parque-memorial",
+        "ciudadId": "hiroshima",
+        "nombre": "Parque Memorial de la Paz",
+        "descripcion": "Recorrido por el parque y los principales espacios conmemorativos.",
+        "intereses": [
+            "cultura-templos"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "mañana",
+        "costeEstimadoEuros": 5,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "hiroshima-miyajima",
+        "ciudadId": "hiroshima",
+        "nombre": "Excursión a Miyajima",
+        "descripcion": "Visita orientativa a la isla de Miyajima y al entorno del santuario Itsukushima.",
+        "intereses": [
+            "cultura-templos",
+            "naturaleza",
+            "japon-tradicional"
+        ],
+        "tiposExperiencia": [
+            "esencial",
+            "equilibrada"
+        ],
+        "duracion": "dia-completo",
+        "momentoRecomendado": "día",
+        "costeEstimadoEuros": 20,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "hiroshima-okonomiyaki",
+        "ciudadId": "hiroshima",
+        "nombre": "Experiencia gastronómica de okonomiyaki",
+        "descripcion": "Tiempo reservado para conocer una de las especialidades gastronómicas de Hiroshima.",
+        "intereses": [
+            "gastronomia"
+        ],
+        "tiposExperiencia": [
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "actividad-corta",
+        "momentoRecomendado": "noche",
+        "costeEstimadoEuros": 15,
+        "esActividadPrincipal": false
+    },
+
+    {
+        "id": "kanazawa-kenrokuen",
+        "ciudadId": "kanazawa",
+        "nombre": "Jardín Kenroku-en",
+        "descripcion": "Paseo por uno de los jardines paisajísticos más conocidos de Japón.",
+        "intereses": [
+            "naturaleza",
+            "japon-tradicional"
+        ],
+        "tiposExperiencia": [
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "mañana",
+        "costeEstimadoEuros": 5,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "kanazawa-higashi-chaya",
+        "ciudadId": "kanazawa",
+        "nombre": "Distrito Higashi Chaya",
+        "descripcion": "Paseo por un barrio tradicional con arquitectura histórica.",
+        "intereses": [
+            "cultura-templos",
+            "japon-tradicional"
+        ],
+        "tiposExperiencia": [
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "tarde",
+        "costeEstimadoEuros": 5,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "kanazawa-omicho",
+        "ciudadId": "kanazawa",
+        "nombre": "Mercado Ōmichō",
+        "descripcion": "Recorrido gastronómico por el mercado tradicional de Kanazawa.",
+        "intereses": [
+            "gastronomia"
+        ],
+        "tiposExperiencia": [
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "actividad-corta",
+        "momentoRecomendado": "mediodía",
+        "costeEstimadoEuros": 15,
+        "esActividadPrincipal": false
+    },
+
+    {
+        "id": "hakone-lago-ashi",
+        "ciudadId": "hakone",
+        "nombre": "Lago Ashi",
+        "descripcion": "Paseo por el entorno natural del lago Ashi.",
+        "intereses": [
+            "naturaleza",
+            "japon-tradicional"
+        ],
+        "tiposExperiencia": [
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "mañana",
+        "costeEstimadoEuros": 10,
+        "esActividadPrincipal": true
+    },
+    {
+        "id": "hakone-onsen",
+        "ciudadId": "hakone",
+        "nombre": "Experiencia de onsen",
+        "descripcion": "Tiempo de descanso en un baño termal, sujeto a las condiciones del alojamiento elegido.",
+        "intereses": [
+            "japon-tradicional",
+            "naturaleza"
+        ],
+        "tiposExperiencia": [
+            "equilibrada",
+            "alternativa"
+        ],
+        "duracion": "media-jornada",
+        "momentoRecomendado": "tarde",
+        "costeEstimadoEuros": 20,
+        "esActividadPrincipal": true
+    }
+]
